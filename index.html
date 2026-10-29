@@ -14,7 +14,11 @@ a{color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 26px}.nav{height:72
 h1{font-size:clamp(54px,8vw,104px);line-height:.84;letter-spacing:-.09em;margin:25px 0 26px;max-width:760px}h1 em{font-style:normal;color:var(--violet)}.hero p{font-size:17px;line-height:1.6;color:var(--muted);max-width:570px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.btn{border:0;border-radius:13px;padding:14px 18px;background:var(--dark);color:#fff;font:inherit;font-size:13px;font-weight:850;cursor:pointer;transition:transform .18s,background .18s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn.lime{background:var(--lime);color:var(--ink)}.hero-art{height:390px;background:var(--dark);border-radius:30px;position:relative;overflow:hidden;padding:24px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}.hero-art:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:var(--violet);right:-40px;top:10px;box-shadow:0 0 0 35px #7257ff30,0 0 0 70px #7257ff18}.hero-art:after{content:"";position:absolute;width:180px;height:240px;background:var(--lime);left:26px;bottom:-60px;transform:rotate(22deg);border-radius:90px 90px 18px 18px;mix-blend-mode:screen;opacity:.9}.art-top,.art-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.art-number{position:relative;z-index:1;font-size:clamp(48px,4.4vw,62px);line-height:.94;font-weight:950;letter-spacing:.01em;align-self:flex-start;max-width:100%;margin-top:auto;margin-bottom:100px;white-space:nowrap}.art-number span{color:var(--lime);display:inline-block;margin-left:.04em;letter-spacing:-.02em}.art-stamp{position:absolute;z-index:2;right:22px;bottom:58px;background:#fff;color:var(--ink);padding:12px 14px;border-radius:13px;font-size:12px;font-weight:900;transform:rotate(-3deg)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 68px}.stat{background:var(--dark);color:#fff;border-radius:19px;padding:20px 22px}.stat b{font-size:30px;letter-spacing:-.06em;display:block}.stat span{font-size:11px;color:#aeb3bd}
 .section{padding:78px 0}.section.dark{background:var(--dark);color:#fff}.sectionhead{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:28px}.eyebrow{font-size:10px;font-weight:950;letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}.dark .eyebrow{color:var(--lime)}h2{font-size:clamp(36px,5vw,62px);line-height:.93;letter-spacing:-.075em;margin:9px 0 0}.sectionhead p{max-width:400px;color:var(--muted);line-height:1.55;font-size:14px}.dark .sectionhead p{color:#aeb3bd}
-.trainer-shell{background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 18px 50px #1113180a}.toolbar{display:grid;grid-template-columns:minmax(180px,1.6fr) 1fr 1fr auto;gap:9px;margin-bottom:16px}.field,select{min-width:0;width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#fafbf8;color:var(--ink);font:inherit;font-size:13px;outline:none}.field:focus-visible,select:focus-visible{border-color:var(--violet);box-shadow:0 0 0 3px #7257ff18}.field:focus:not(:focus-visible),select:focus:not(:focus-visible){outline:none;border-color:var(--line);box-shadow:none}select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%2369707d%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27m6 9 6 6 6-6%27/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center}.statline{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 18px}.pill{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:#eef0f5;font-size:11px;font-weight:850}.pill.violet{background:#eeeaff;color:#4932d4}.pill.lime{background:#edffbd}.progress{height:6px;background:#eceef1;border-radius:99px;overflow:hidden;margin:0 0 22px}.progress span{display:block;height:100%;width:0;background:var(--violet);transition:width .2s}
+.trainer-shell{background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 18px 50px #1113180a}.toolbar{display:grid;grid-template-columns:minmax(180px,1.6fr) 1fr 1fr auto;gap:9px;margin-bottom:16px}
+.jump-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 16px}
+.jump-row label{font-size:12px;font-weight:850;color:var(--muted)}
+.jump-row .field{width:230px;flex:0 1 230px}
+.jump-notice{font-size:12px;color:#9a4b35;min-height:0}.field,select{min-width:0;width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#fafbf8;color:var(--ink);font:inherit;font-size:13px;outline:none}.field:focus-visible,select:focus-visible{border-color:var(--violet);box-shadow:0 0 0 3px #7257ff18}.field:focus:not(:focus-visible),select:focus:not(:focus-visible){outline:none;border-color:var(--line);box-shadow:none}select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%2369707d%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27m6 9 6 6 6-6%27/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center}.statline{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 18px}.pill{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:#eef0f5;font-size:11px;font-weight:850}.pill.violet{background:#eeeaff;color:#4932d4}.pill.lime{background:#edffbd}.progress{height:6px;background:#eceef1;border-radius:99px;overflow:hidden;margin:0 0 22px}.progress span{display:block;height:100%;width:0;background:var(--violet);transition:width .2s}
 .question-card,.question-card .prompt,.question-card .option,.question-card .option span,.question-card .q-index{color:var(--ink)}.question-card .q-index{color:var(--muted)}.question-card .q-status{color:#656b78}.question-card .q-status.checked{color:#304100}.question-card .q-status.review{color:#795400}.question-card .option input{accent-color:var(--violet)}.question-card .q-actions .btn{color:#fff}.question-card .q-actions .btn.lime,.question-card .q-actions .btn.secondary{color:var(--ink)}
 .question-card{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,30px);background:#fff}.q-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:20px}.q-index{font-size:11px;color:var(--muted);font-weight:850;letter-spacing:.1em;text-transform:uppercase}.q-status{font-size:10px;font-weight:900;padding:7px 9px;border-radius:999px;background:#f1f1f5;color:#656b78}.q-status.checked{background:#edffbd;color:#304100}.q-status.review{background:#fff0c9;color:#795400}.case-context{margin:0 0 16px;padding:14px 16px;border-left:3px solid var(--violet);border-radius:0 12px 12px 0;background:#f3f0ff;color:#37314f;font-size:14px;line-height:1.55;white-space:pre-wrap}.mini-question .case-context{font-size:12px;color:#37314f;margin-top:10px}.case-context strong{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#7257ff}.prompt{font-size:clamp(19px,2.4vw,27px);font-weight:800;line-height:1.3;letter-spacing:-.035em;white-space:pre-wrap}.options{display:grid;gap:9px;margin-top:22px}.option{display:flex;gap:12px;align-items:flex-start;padding:14px 15px;border:1px solid var(--line);border-radius:13px;cursor:pointer;background:#fff;transition:border .15s,background .15s}.option:hover{border-color:#aaa0ff;background:#fbfaff}.option input{margin-top:4px;accent-color:var(--violet);flex:0 0 auto}.option span{font-size:14px;line-height:1.45;white-space:pre-wrap}.option.correct{background:var(--good);border-color:#9dc56a}.option.wrong{background:var(--bad);border-color:#e3a096}.option.locked{cursor:default}.feedback{margin-top:16px;padding:15px;border-radius:13px;background:#f2f3f6;line-height:1.5;font-size:13px}.feedback.good{background:#edffbd}.feedback.bad{background:#fff0e9}.feedback strong{display:block;margin-bottom:4px}
 .matching-list{display:grid;gap:10px;margin-top:22px}.matching-notice{font-size:12px;color:#9a4b35;margin-top:8px;min-height:0}
@@ -32,7 +36,7 @@ h1{font-size:clamp(54px,8vw,104px);line-height:.84;letter-spacing:-.09em;margin:
 .q-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.q-actions .btn{flex:1;min-width:130px}.empty{padding:40px 20px;text-align:center;color:var(--muted)}.list-view{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mini-question{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.mini-question h3{font-size:14px;line-height:1.4;margin:10px 0}.mini-question p{font-size:12px;line-height:1.5;color:var(--muted);white-space:pre-wrap}.mini-question .btn{padding:9px 12px;font-size:11px}
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:23px;padding:25px;min-height:205px}.card h3{font-size:22px;letter-spacing:-.045em;margin:32px 0 10px}.card p{color:var(--muted);font-size:13px;line-height:1.6}.dark .card{background:#191b20;border-color:#2a2d34}.dark .card p{color:#b5bac4}
 .note{display:flex;gap:12px;align-items:flex-start;background:#f0edff;border:1px solid #ded7ff;border-radius:16px;padding:16px;font-size:12px;line-height:1.55;color:#332875;margin-top:14px}.note b{font-size:17px}.footer{padding:38px 0 48px;color:var(--muted);font-size:11px;line-height:1.7}.footer strong{color:var(--ink)}
-@media(max-width:850px){.grid3{grid-template-columns:1fr}.hero{grid-template-columns:1fr;min-height:0;padding-top:45px}.hero-art{height:300px}.art-number{font-size:clamp(46px,6.4vw,58px);letter-spacing:.01em;margin-bottom:86px}.art-stamp{bottom:52px;right:16px;font-size:10px;padding:10px 11px}.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar .field{grid-column:1/-1}.sectionhead{align-items:flex-start;flex-direction:column}.list-view{grid-template-columns:1fr}}
+@media(max-width:850px){.grid3{grid-template-columns:1fr}.hero{grid-template-columns:1fr;min-height:0;padding-top:45px}.hero-art{height:300px}.art-number{font-size:clamp(46px,6.4vw,58px);letter-spacing:.01em;margin-bottom:86px}.art-stamp{bottom:52px;right:16px;font-size:10px;padding:10px 11px}.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar .field{grid-column:1/-1}.jump-row label{width:100%}.jump-row .field{width:auto;flex:1 1 150px;min-width:0}.jump-row .btn{white-space:nowrap}.sectionhead{align-items:flex-start;flex-direction:column}.list-view{grid-template-columns:1fr}}
 @media(max-width:520px){.matching-row{grid-template-columns:1fr;gap:9px}.matching-result{grid-column:1}.wrap{padding:0 15px}.nav{height:62px}.navlinks{gap:10px;font-size:11px}.hero{padding-top:35px;gap:24px}.hero-art{height:250px;border-radius:22px;padding:18px}.art-number{font-size:clamp(38px,10vw,50px);margin-bottom:76px;letter-spacing:.01em}.art-stamp{bottom:43px;right:12px;font-size:9px;padding:8px 9px}.stats{gap:8px;margin-bottom:45px}.stat{padding:15px}.stat b{font-size:25px}.section{padding:54px 0}.trainer-shell{padding:10px;border-radius:20px}.toolbar{grid-template-columns:1fr}.toolbar .field{grid-column:auto}.question-card{padding:15px}.q-top{align-items:flex-start}.q-actions .btn{min-width:100%;}.prompt{font-size:19px}.option{padding:12px}.option span{font-size:13px}}
 
 /* QA: enforce readable contrast on every light training surface */
@@ -99,6 +103,12 @@ select:hover{border-color:var(--line);box-shadow:none}button:focus-visible, a:fo
         <select id="view"><option value="quiz">Режим тренировки</option><option value="list">Список вопросов</option><option value="flash">Карточки: вопрос → ответ</option></select>
         <button class="btn secondary" id="randomBtn">Наугад ↗</button>
       </div>
+      <div class="jump-row">
+        <label for="questionJump">Перейти к вопросу PDF №</label>
+        <input class="field" id="questionJump" type="text" inputmode="decimal" autocomplete="off" placeholder="Например, 120 или 274.3" aria-label="Номер вопроса в PDF">
+        <button class="btn secondary" id="jumpBtn">Перейти →</button>
+        <span class="jump-notice" id="jumpNotice" role="status" aria-live="polite"></span>
+      </div>
       <div class="statline">
         <span class="pill violet" id="shownCount">321 задание</span>
         <span class="pill" id="progressText">Прогресс: 0 / 274</span>
@@ -162,7 +172,15 @@ if(q75ForMigration && progress[75]?.answered && progress[75]?.matchingSelected){
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); } catch(e) {}
   }
 }
-let currentId = QUESTIONS[0]?.id || 1;
+const LAST_QUESTION_KEY = 'propa-trainer-last-question-v1';
+let currentId = (() => {
+  try {
+    const saved = Number(localStorage.getItem(LAST_QUESTION_KEY));
+    if(saved && QUESTIONS.some(q=>q.id===saved)) return saved;
+  } catch(e) {}
+  return QUESTIONS[0]?.id || 1;
+})();
+function rememberCurrent(){try{localStorage.setItem(LAST_QUESTION_KEY,String(currentId));}catch(e){}}
 let checked = false;
 let flashRevealed = false;
 let selected = new Set();
@@ -225,7 +243,7 @@ function resetCurrent(){checked=false;selected=new Set();matchingSelected={};fla
 function openQuestion(id){
   const target=QUESTIONS.find(q=>String(q.id)===String(id));
   if(!target)return;
-  currentId=target.id;resetCurrent();$('view').value='quiz';
+  currentId=target.id;rememberCurrent();resetCurrent();$('view').value='quiz';
   const visible=filtered().some(q=>q.id===target.id);
   if(!visible){$('filter').value='all';$('search').value='';}
   render();$('trainer').scrollIntoView({behavior:'smooth',block:'start'});
@@ -302,8 +320,9 @@ function render(){
   const view=$('view').value;
   if(view==='list'){$('content').innerHTML=renderList(items);return;}
   let q=items.find(x=>x.id===currentId);
-  if(!q && items.length){q=items[0];currentId=q.id;resetCurrent();}
+  if(!q && items.length){q=items[0];currentId=q.id;rememberCurrent();resetCurrent();}
   if(!q){$('content').innerHTML='<div class="empty">Ничего не найдено. Попробуй изменить поиск или фильтр.</div>';return;}
+  rememberCurrent();
   $('content').innerHTML=view==='flash'?renderFlash(q):renderQuiz(q);
 }
 function word(n,forms){const n10=n%10,n100=n%100;return n100>=11&&n100<=19?forms[2]:n10===1?forms[0]:n10>=2&&n10<=4?forms[1]:forms[2];}
@@ -321,7 +340,7 @@ window.nextQuestion=()=>{
  const items=filtered();if(!items.length)return;
  const i=items.findIndex(q=>q.id===currentId);
  currentId=items[(i+1+items.length)%items.length].id;
- resetCurrent();render();
+ rememberCurrent();resetCurrent();render();
 };
 window.revealFlash=()=>{flashRevealed=true;render();};
 window.openQuestion=openQuestion;
@@ -331,6 +350,20 @@ window.toggleFlag=()=>{
  progress[q.id]=s?{...s,flagged:!s.flagged}:{selected:[],correct:false,answered:false,flagged:true,at:Date.now()};
  save();render();
 };
+function jumpToQuestion(){
+  const raw=$('questionJump').value.trim();
+  const notice=$('jumpNotice');
+  if(!raw){notice.textContent='Введи номер вопроса из PDF.';return;}
+  const normalized=raw.replace(',', '.').toLocaleLowerCase('ru');
+  let target=QUESTIONS.find(q=>String(q.sourceLabel).toLocaleLowerCase('ru')===normalized);
+  if(!target && /^\d+$/.test(normalized)) target=QUESTIONS.find(q=>q.id===Number(normalized));
+  if(!target){notice.textContent='Не нашла такой номер. Проверь номер в заголовке вопроса.';return;}
+  notice.textContent='';
+  openQuestion(target.id);
+  $('questionJump').value=String(target.sourceLabel);
+}
+$('jumpBtn').addEventListener('click',jumpToQuestion);
+$('questionJump').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();jumpToQuestion();}});
 $('randomBtn').addEventListener('click',()=>{let a=filtered();if(!a.length){$('filter').value='all';$('search').value='';a=QUESTIONS;}const q=a[Math.floor(Math.random()*a.length)];openQuestion(q.id);});
 $('heroRandom').addEventListener('click',()=>{const a=QUESTIONS.filter(q=>!state(q));const pool=a.length?a:QUESTIONS;openQuestion(pool[Math.floor(Math.random()*pool.length)].id);});
 $('search').addEventListener('input',()=>{
