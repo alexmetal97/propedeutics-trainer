@@ -105,7 +105,7 @@ select:hover{border-color:var(--line);box-shadow:none}button:focus-visible, a:fo
       </div>
       <div class="jump-row">
         <label for="questionJump">Перейти к вопросу PDF №</label>
-        <input class="field" id="questionJump" type="text" inputmode="decimal" autocomplete="off" placeholder="Например, 120 или 274.3" aria-label="Номер вопроса в PDF">
+        <input class="field" id="questionJump" type="text" inputmode="decimal" autocomplete="off" placeholder="Например, 120, 274 или 274.3" aria-label="Номер вопроса в PDF">
         <button class="btn secondary" id="jumpBtn">Перейти →</button>
         <span class="jump-notice" id="jumpNotice" role="status" aria-live="polite"></span>
       </div>
@@ -354,10 +354,16 @@ function jumpToQuestion(){
   const raw=$('questionJump').value.trim();
   const notice=$('jumpNotice');
   if(!raw){notice.textContent='Введи номер вопроса из PDF.';return;}
-  const normalized=raw.replace(',', '.').toLocaleLowerCase('ru');
+  const normalized=raw.replace(',', '.').replace(/^№\s*/i,'').trim().toLocaleLowerCase('ru');
   let target=QUESTIONS.find(q=>String(q.sourceLabel).toLocaleLowerCase('ru')===normalized);
+  // Если введён общий номер из PDF (например, 274), а в источнике он
+  // разбит на 274.1, 274.2, 274.3, открываем первый подпункт этой группы.
+  if(!target && /^\d+$/.test(normalized)){
+    target=QUESTIONS.find(q=>String(q.sourceNum)===normalized);
+  }
+  // Для совместимости оставляем переход по внутреннему порядковому номеру сайта.
   if(!target && /^\d+$/.test(normalized)) target=QUESTIONS.find(q=>q.id===Number(normalized));
-  if(!target){notice.textContent='Не нашла такой номер. Проверь номер в заголовке вопроса.';return;}
+  if(!target){notice.textContent='Не нашла такой номер. Введи номер из заголовка вопроса в PDF.';return;}
   notice.textContent='';
   openQuestion(target.id);
   $('questionJump').value=String(target.sourceLabel);
